@@ -31,7 +31,7 @@ jobs:
 
     - name: setup glitch git
       run: |
-        ls -lrt;
+        ls -lrta;
         rm -rf .git;
         cd build;
         git init;
@@ -40,6 +40,6 @@ jobs:
 
     - name: deploy to glitch
       run: |
-        ls -lrt;
+        ls -lrta;
         git push glitch HEAD:master -f
 
