@@ -34,6 +34,8 @@ jobs:
         ls -lrta;
         cd build;
         git init;
+        git config --global user.email "pedrohozelim@gmail.com";
+        git config --global user.name "Pedro Ozelim";
         git remote add glitch ${{ secrets.glitch_git_URL }};
 
     - name: deploy to glitch
