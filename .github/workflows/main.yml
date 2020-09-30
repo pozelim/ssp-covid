@@ -34,11 +34,13 @@ jobs:
         ls -lrta;
         cd build;
         git init;
-        git add *
-        git remote add glitch ${{ secrets.glitch_git_URL }}
+        git remote add glitch ${{ secrets.glitch_git_URL }};
 
     - name: deploy to glitch
       run: |
+        cd build;
         ls -lrta;
+        git add *;
+        git commit -m "Deploy"
         git push glitch HEAD:master -f
 
