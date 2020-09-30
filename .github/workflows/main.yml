@@ -32,7 +32,7 @@ jobs:
     - name: setup glitch git
       run: |
         ls -lrt;
-        git config --global --unset core.excludesfile;
+        rm -rf .git;
         cd build;
         git init;
         git add *
