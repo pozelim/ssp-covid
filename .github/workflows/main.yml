@@ -27,7 +27,8 @@ jobs:
       
     - name: yarn build
       run: |
-        yarn run build
+        yarn run build;
+        ls -lrt;
 
     - name: go to build dir
       run: |
@@ -39,4 +40,5 @@ jobs:
     
     - name: deploy to glitch
       run: |
+        ls -lrt;
         git push destination HEAD:master -f
