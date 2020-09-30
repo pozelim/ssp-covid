@@ -32,7 +32,6 @@ jobs:
     - name: setup glitch git
       run: |
         ls -lrta;
-        rm -rf .git;
         cd build;
         git init;
         git add *
