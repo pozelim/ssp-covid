@@ -24,6 +24,13 @@ const options = {
         },
       },
     ],
+    yAxes: [
+      {
+        ticks: {
+          fontSize: 8,
+        },
+      },
+    ],
   },
 };
 export default class LineCaseSum extends React.Component {
@@ -83,7 +90,7 @@ export default class LineCaseSum extends React.Component {
           pointHoverBackgroundColor: "rgba(75,192,192,1)",
           pointHoverBorderColor: "rgba(220,220,220,1)",
           pointHoverBorderWidth: 2,
-          pointRadius: 1,
+          pointRadius: 0,
           pointHitRadius: 10,
           data: mainData,
         },
